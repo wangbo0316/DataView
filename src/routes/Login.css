@@ -1,0 +1,17 @@
+.contain{
+  height: 100%;
+  width: 100%;
+  background-image: url("../../public/img/login_back.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.login-form {
+  max-width: 300px;
+
+}
+.login-form-forgot {
+  float: right;
+}
+.login-form-button {
+  width: 100%;
+}

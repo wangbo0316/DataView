@@ -1,0 +1,11 @@
+.contain{
+  height: 100%;
+  width: 100%;
+  background-color: #111F50;
+}
+
+.p_font{
+  color: #f7f7f7;
+  text-align: center;
+  font-size: 18px;
+}

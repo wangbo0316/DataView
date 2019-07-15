@@ -1,0 +1,28 @@
+{
+  "entry": "src/index.js",
+  "publicPath":"./",
+  "proxy": {
+    "/api": {
+      "target": "localhost:8012/",
+      "changeOrigin": true,
+      "pathRewrite": { "^/api" : "" }
+    }
+  },
+  "env": {
+    "development": {
+      "extraBabelPlugins": [
+        "dva-hmr",
+        "transform-runtime",
+        ["import", { "libraryName": "antd", "style": "css" }]
+      ]
+    },
+
+    "production": {
+    "publicPath":"./",
+      "extraBabelPlugins": [
+        "transform-runtime",
+        ["import", { "libraryName": "antd", "style": "css" }]
+      ]
+    }
+  }
+}
